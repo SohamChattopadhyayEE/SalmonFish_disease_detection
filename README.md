@@ -30,5 +30,7 @@ The entire code is in Python language. Therefore Python is the primary necessity
 - `pandas`
 - `scipy`
 - `pytorch`
+- `OpenCV`
+- `os`
 
 These packages can be installed in the local system by the command `pip install --package`. 
