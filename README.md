@@ -20,4 +20,14 @@ The objective of this paper is to classify salmon hearts are infected on otherwi
     - Spectrograms are extracted from three different filtration levels of the original signal. 
 - #### Classification 
     - For classification, 4 differents algorithms are chosen. Three among them are classical machine learning classifiers, such as SVM, KNN and MLP, and one is a shalow deep learning model called [LightOCT](https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-11-9-5017&id=434402 "Link to the paper of LightOCT"). Among the aforementioned 8 features, first 7 are used for the machine learning based models and the last one, that is the spectrogram is used for the LightOCT. 
-      
+
+## Dependencies and packages
+The entire code is in Python language. Therefore Python is the primary necessity to run the project. Following are the Python packages used in this project and should be installed in the system to run the codes. 
+- `sklearn`
+- `matplotlib`
+- `numpy`
+- `pandas`
+- `scipy`
+- `pytorch`
+
+These packages can be installed in the local system by the command `pip install --package`. 
