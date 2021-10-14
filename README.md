@@ -5,7 +5,7 @@ The objective of this paper is to classify salmon hearts are infected on otherwi
 
 ## Experiment Details
 - #### Dataset 
-    The dataset is consisted of several `.avi` videos of 10 embryonic Salmon hearts. Among which 5 are infected and 5 are healthy. Videos are recorded at three different time   frames, that is on Day 0, Day 7 and Day 21. However, most of the embryonic hearts did not survive till Day 21. This task focuses on detecting diseased hearts as early as possible. However at Day 0, since the disease just start effecting the heart, no significant abnormality or distortions in tissues are found between the healthy and ill hearts. Therefore, the aim of finding and seperating ill hearts gets narrowed down to the data obtained on Day 7 only. The Day 7 dataset can be downloaded from [here](https://drive.google.com/drive/folders/1T2C58kKQvSJLvvfWZYVaozHHQ1bwH7-L?usp=sharing "Day 7 dataset").
+    The dataset is consisted of several `.avi` videos of 10 embryonic Salmon hearts. Among which 5 are infected and 5 are healthy. Videos are recorded at three different time   frames, that is on Day 0, Day 7 and Day 21. However, most of the embryonic hearts did not survive till Day 21. This task focuses on detecting diseased hearts as early as possible. However at Day 0, since the disease just start effecting the heart, no such discriminatory abnormality or distortions in tissues are found between the healthy and ill hearts. Therefore, the aim of finding and seperating ill hearts gets narrowed down to the data obtained on Day 7 only. The Day 7 dataset can be downloaded from [here](https://drive.google.com/drive/folders/1T2C58kKQvSJLvvfWZYVaozHHQ1bwH7-L?usp=sharing "Day 7 dataset").
 - #### Features 
     - First from the video data a signal depicting the variation of size of the heart is generated. 
     - From the signal following `8` features are extracted-
@@ -17,4 +17,7 @@ The objective of this paper is to classify salmon hearts are infected on otherwi
       - average contraction phase (ACP)
       - standard deviation of the contraction phase (SDCP)
       - spectrogram
+    - Spectrograms are extracted from three different filtration levels of the original signal. 
+- #### Classification 
+    - For classification, 4 differents algorithms are chosen. Three among them are classical machine learning classifiers, such as SVM, KNN and MLP, and one is a shalow deep learning model called [LightOCT](https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-11-9-5017&id=434402 "Link to the paper of LightOCT"). Among the aforementioned 8 features, first 7 are used for the machine learning based models and the last one, that is the spectrogram is used for the LightOCT. 
       
