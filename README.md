@@ -4,3 +4,4 @@ Cardiac diseases in salmon significantly affect Norway’s economy. An estimated
 The objective of this paper is to classify salmon hearts are infected on otherwise by using videos of embryonic heart to identify various physical parameters that allow classification. In this present study, controlled eggs of salmon fishes are embryonated and their embryonic hearts are put under observation. Furthermore different videos at different time frames are recorded which provides valuable information about the changes of behaviours of embryonic hearts. Thereafter, based on certain attributes extracted from this data, various predictive artificial intelligence models are used for the classification purpose. 
 
 ## Experiment Details
+- ### Dataset 
