@@ -1,1 +1,1 @@
-# salmon_fish_disease_detection
+# Cardiac disease detection in Salmon fishes
