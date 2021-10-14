@@ -17,7 +17,7 @@ The objective of this paper is to classify salmon hearts are infected on otherwi
       - average contraction phase (ACP)
       - standard deviation of the contraction phase (SDCP)
       - spectrogram
-    - Spectrograms are extracted from three different filtration levels of the original signal. 
+    - Spectrograms are extracted from three different filtration levels of the original signal. The following figure depicts this pipeline of spectrogram generation. ![Spectrogram creation](https://github.com/SohamChattopadhyayEE/SalmonFish_disease_detection/blob/main/Figures/Spectrograms.JPG)
     - The signal generation from the video data and attributes extraction from the signal can be done by simply running the code [`run.py`](https://github.com/SohamChattopadhyayEE/SalmonFish_disease_detection/blob/main/Codes/Features%20Extraction/run.py), where only the path of the directory containing the videos should be given as input. 
 - #### Classification 
     - For classification, 4 differents algorithms are chosen. Three among them are classical machine learning classifiers, such as SVM, KNN and MLP, and one is a shalow deep learning model called [LightOCT](https://www.osapublishing.org/boe/fulltext.cfm?uri=boe-11-9-5017&id=434402 "Link to the paper of LightOCT"). Among the aforementioned 8 features, first 7 are used for the machine learning based models and the last one, that is the spectrogram is used for the LightOCT. 
